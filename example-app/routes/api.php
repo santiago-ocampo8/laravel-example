@@ -38,6 +38,7 @@ Route::controller(RolesController::class)->group(function () {
     Route::get('role','index'); //Para obtener todos
     Route::get('role/{id}', 'show'); //Para consultar especifico
     Route::post('role', 'store'); //Para guardar
+    Route::put('role/permission/{id}', 'addPermissions'); 
     Route::put('role/{id}', 'update'); //Para actualizar
     Route::delete('role/{id}', 'destroy'); //Para eliminar un registro
 });
