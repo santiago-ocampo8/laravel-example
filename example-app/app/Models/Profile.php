@@ -10,7 +10,7 @@ class Profile extends Model
     use HasFactory;
     protected $fillable = [
         'phone_number',
-        'url_instagram',
+        'url_facebook',
         'user_id'
     ];
 
